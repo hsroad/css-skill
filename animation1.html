@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>阶梯展示</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .a1 {
+        opacity: 0;
+        animation: a ease-in 500ms backwards;
+      }
+      .a2 {
+        opacity: 0;
+        animation: a ease-in 1000ms 1s backwards;
+      }
+      .a3 {
+        opacity: 0;
+        animation: a ease-in 1500ms 1.5s backwards;
+      }
+      @keyframes a {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="a1">第一行</div>
+      <div class="a2">第二行</div>
+      <div class="a3">第三行</div>
+    </div>
+  </body>
+</html>
